@@ -27,3 +27,40 @@ describe("Create correct fibonacci sequence", function () {
         expect(result[result.length - 1]).toBe(3524578);
     });
 });
+
+describe("Select all even fibonacci numbers", function () {
+
+    it("should return 2, 8, 34, given the sequence 1, 2, 3, 5, 8, 13, 21, 34, 55, 89", function () {
+
+        var result = selectEvenFibonacciNumbers([1, 2, 3, 5, 8, 13, 21, 34, 55, 89]);
+        expect(result[0]).toBe(2);
+        expect(result[1]).toBe(8);
+        expect(result[2]).toBe(34);        
+
+    });
+
+});
+
+describe("Add sequence together", function () {
+
+    it("should return 44 given the sequence 2, 8, 34", function () {
+
+        var result = sum([2, 8, 34]);
+        expect(result).toBe(44);      
+
+    });
+
+});
+
+describe("Getting the sum for a sequence that is no larger than 4 million", function () {
+
+    it("should return the answer for project euler", function () {
+
+        var sequence = createFibonacciSequence(100);
+        var evenNumbers = selectEvenFibonacciNumbers(sequence);
+        var result = sum(evenNumbers);
+        console.info(result);
+
+    });
+
+});
