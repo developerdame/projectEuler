@@ -9,4 +9,10 @@ function isPrimeNumber(number) {
             return false;
     }
         return true;
-}
+    }
+
+    function isDivisableByNumber(number, divideByNumber) {
+
+        return number % divideByNumber == 0;
+
+    } 

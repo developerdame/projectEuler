@@ -35,3 +35,23 @@ describe("Check if number is prime number", function () {
         expect(result).toBe(true);
     });
 });
+
+describe("Check if number is divisable by number", function () {
+
+    it("should return true given the number 9 is divisable by 3", function () {
+
+    var result = isDivisableByNumber(9, 3);
+
+    expect(result).toBe(true);
+
+});
+
+it("should return false given the number 9 is divisable by 5", function () {
+
+    var result = isDivisableByNumber(9, 5);
+
+    expect(result).toBe(false);
+
+});
+
+});
