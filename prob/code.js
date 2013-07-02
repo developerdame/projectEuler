@@ -9,6 +9,8 @@ function reverseNumber(number) {
 
 function isNumberPalindrome(number){
 
-    
+    if (number == reverseNumber(number))
+        return true;
 
+    return false;
 }

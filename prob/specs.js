@@ -15,12 +15,19 @@ describe("Reverse order of numbers", function () {
     });
 });
 
-//describe("Check if number is palidrome", function () {
+describe("Check if number is palidrome", function () {
 
-//    it("should return true given the number 1001", function () {
+    it("should return true given the number 1001", function () {
 
-//        var result = isPrimeNumber(2);
+        var result = isNumberPalindrome(1001);
 
-//        expect(result).toBe(true);
-//    });
-//});
+        expect(result).toBe(true);
+    });
+
+    it("should return false given the number 1234", function () {
+
+        var result = isNumberPalindrome(1234);
+
+        expect(result).toBe(false);
+    });
+});
