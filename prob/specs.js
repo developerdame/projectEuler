@@ -31,3 +31,13 @@ describe("Check if number is palidrome", function () {
         expect(result).toBe(false);
     });
 });
+
+describe("Get Highest palindrome", function () {
+
+    it("should return 9009", function () {
+
+        var result = getHighestPalidromeProduct();
+        console.info(result);
+        expect(result).toBe(9009);
+    });
+});

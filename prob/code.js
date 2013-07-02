@@ -14,3 +14,20 @@ function isNumberPalindrome(number){
 
     return false;
 }
+
+function getHighestPalidromeProduct() {
+    var highest = 0;
+
+    for (i = 999; i > 0; i--) {
+        
+        for (x = 999; x > 0; x--) {
+
+            if (isNumberPalindrome(i * x)) {
+                if ((x * i) > highest) {
+                    highest = i * x;
+                }
+            }
+        }
+    }
+    return highest;
+}
